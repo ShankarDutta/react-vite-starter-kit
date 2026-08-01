@@ -1,5 +1,5 @@
 const App = () => {
-	return <div>Enter</div>;
+	return <div className="grid place-items-center h-dvh"></div>;
 };
 
 export default App;

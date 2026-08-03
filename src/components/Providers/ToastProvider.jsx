@@ -4,7 +4,10 @@ import { useTheme } from "./ThemeProvider";
 const ToastProvider = () => {
   const { theme } = useTheme();
 
-  const isDark = theme === "dark";
+  const isDark =
+    theme === "dark" ||
+    (theme === "system" &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches);
 
   return (
     <Toaster

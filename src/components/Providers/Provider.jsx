@@ -1,15 +1,18 @@
+import { HelmetProvider } from "react-helmet-async";
 import { ThemeProvider } from "./ThemeProvider";
 import ToastProvider from "./ToastProvider";
 
 const Provider = ({ children }) => {
   return (
-    <ThemeProvider
-      defaultTheme="dark"
-      storageKey="vite-ui-theme">
-      {children}
+    <HelmetProvider>
+      <ThemeProvider
+        defaultTheme="dark"
+        storageKey="vite-ui-theme">
+        {children}
 
-      <ToastProvider />
-    </ThemeProvider>
+        <ToastProvider />
+      </ThemeProvider>
+    </HelmetProvider>
   );
 };
 

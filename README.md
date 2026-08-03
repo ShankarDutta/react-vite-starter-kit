@@ -55,7 +55,7 @@ VITE_DOMAIN_NAME="https://your-domain.com"
 Example:
 
 ```env
-VITE_DOMAIN_NAME="https://example.com"
+VITE_DOMAIN_NAME="http://localhost:4173"
 ```
 
 > **Important:** Replace the placeholder with your actual production domain.
@@ -169,13 +169,19 @@ This command:
 ├── src/
 │   ├── assets/
 │   ├── components/
+│   ├── hooks/
 │   ├── layouts/
+│   ├── lib/
 │   ├── pages/
 │   ├── routes/
-│   ├── lib/
+│   ├── services/
 │   └── main.jsx
 ├── .env
+├── .env.example
+├── .gitignore
+├── .prettierrc
 ├── package.json
+├── package-lock.json
 └── vite.config.js
 ```
 

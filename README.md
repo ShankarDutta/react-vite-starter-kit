@@ -1,16 +1,244 @@
-# React + Vite
+# ⚡ React Vite Starter Kit
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, production-ready **React + Vite** starter template with **Tailwind CSS v4**, **ESLint**, **Prettier**, automatic **SEO metadata generation**, and a clean project structure to help you start building immediately.
 
-Currently, two official plugins are available:
+> Designed for developers who want a fast, scalable, and production-ready React project.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* ⚛️ React 19
+* ⚡ Vite 8
+* 🎨 Tailwind CSS v4
+* 🧩 shadcn/ui ready
+* 🎯 ESLint configuration
+* 💅 Prettier + Tailwind plugin
+* 🌙 Dark mode ready
+* 🔍 Automatic SEO metadata generation
+* 🗺️ Sitemap & robots.txt generation
+* 📱 Responsive starter layout
+* 🚀 Optimized production build
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# 📦 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/ShankarDutta/react-vite-starter-kit.git
+```
+
+Move into the project:
+
+```bash
+cd react-vite-starter-kit
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+---
+
+# 🔐 Environment Variables
+
+Create a `.env` file in the project root.
+
+```env
+VITE_DOMAIN_NAME="https://your-domain.com"
+```
+
+Example:
+
+```env
+VITE_DOMAIN_NAME="https://example.com"
+```
+
+> **Important:** Replace the placeholder with your actual production domain.
+
+---
+
+# 🚀 Development
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+---
+
+# 🔍 Generate SEO Files
+
+Generate public SEO metadata (sitemap, robots, etc.):
+
+```bash
+npm run seo
+```
+
+This script runs automatically before every production build.
+
+---
+
+# 🏗 Production Build
+
+Create an optimized production build:
+
+```bash
+npm run build
+```
+
+This command automatically:
+
+1. Generates SEO metadata.
+2. Builds the production bundle.
+
+---
+
+# 👀 Preview Production Build
+
+After building, preview the production version locally:
+
+```bash
+npm run preview
+```
+
+---
+
+# 🧹 Lint
+
+Check your project for ESLint issues.
+
+```bash
+npm run lint
+```
+
+---
+
+# ✅ Check Code Quality
+
+Runs:
+
+* ESLint
+* Prettier format check
+
+```bash
+npm run check
+```
+
+---
+
+# 🎨 Format Code
+
+Automatically format the entire project.
+
+```bash
+npm run format
+```
+
+---
+
+# 🚀 Production Check
+
+Before deploying, run:
+
+```bash
+npm run prod
+```
+
+This command:
+
+* Runs ESLint
+* Checks formatting
+* Formats the project
+* Generates SEO metadata
+* Creates the production build
+
+---
+
+# 📁 Project Structure
+
+```text
+.
+├── public/
+├── scripts/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── layouts/
+│   ├── pages/
+│   ├── routes/
+│   ├── lib/
+│   └── main.jsx
+├── .env
+├── package.json
+└── vite.config.js
+```
+
+---
+
+# 🌐 Deployment
+
+This starter works perfectly with:
+
+* Vercel
+* Netlify
+* Render
+* GitHub Pages (with configuration)
+
+Build command:
+
+```bash
+npm run build
+```
+
+Output directory:
+
+```text
+dist
+```
+
+---
+
+# 📜 Available Scripts
+
+| Script            | Description                                               |
+| ----------------- | --------------------------------------------------------- |
+| `npm run dev`     | Start development server                                  |
+| `npm run seo`     | Generate SEO metadata                                     |
+| `npm run build`   | Generate SEO metadata and build the app                   |
+| `npm run preview` | Preview the production build locally                      |
+| `npm run lint`    | Run ESLint                                                |
+| `npm run check`   | Run ESLint and Prettier checks                            |
+| `npm run format`  | Format the project using Prettier                         |
+| `npm run prod`    | Run checks, format code, generate SEO metadata, and build |
+
+---
+
+# 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome.
+
+Feel free to fork the repository and submit a pull request.
+
+---
+
+# ⭐ Support
+
+If you find this project useful, consider giving it a ⭐ on GitHub.
+
+It helps others discover the project and supports future improvements.
+
+---
+
+# 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+Made with ❤️ by **Shankar Dutta**

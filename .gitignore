@@ -18,6 +18,7 @@
 /out/
 
 # production
+dist
 /build
 
 # misc
@@ -36,4 +37,5 @@ yarn-error.log*
 
 # vercel
 .vercel
+
 

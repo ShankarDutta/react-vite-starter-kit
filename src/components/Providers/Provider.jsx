@@ -1,4 +1,5 @@
 import { ThemeProvider } from "./ThemeProvider";
+import ToastProvider from "./ToastProvider";
 
 const Provider = ({ children }) => {
   return (
@@ -6,6 +7,8 @@ const Provider = ({ children }) => {
       defaultTheme="dark"
       storageKey="vite-ui-theme">
       {children}
+
+      <ToastProvider />
     </ThemeProvider>
   );
 };
